@@ -50,8 +50,8 @@ def mess(m):
 	user = f'tg://user?id={id}'
 	link_account = f' |  [ ؍{name}؍ ]({user})  | '
 	#link_ch = f' |  [Mahodi](t.me/mahodii)  | '
-	link_ch = f' |  [Mahdi](t.me/kckkkkc)  | '
-	y = types.InlineKeyboardButton(text='اضغط هنا للدخول ',callback_data='y')
+	link_ch = f' |  [aBooD](t.me/kckkkkc)  | '
+	y = types.InlineKeyboardButton(text='Click Hear To Start ',callback_data='y')
 	y1 = types.InlineKeyboardMarkup(row_width=1);y1.add(y)
 	bot.send_message(m.chat.id,f'''
 <strong>Welcome To Bot Check v3 [{name}]\n Click Any Type \n Programmer : {link_ch}</strong>
@@ -61,7 +61,7 @@ def call1(call):
 	
 	if call.data=='y':
 		y1y = bot.send_message(call.message.chat.id,'''
-<strong>Welcome Send \n <code>abd\n Click To copy</code></strong>
+<strong>Welcome Send \n <code>abd</code></strong>
 		''',parse_mode='html')
 		bot.register_next_step_handler(y1y,a1a)
 def a1a(message):
